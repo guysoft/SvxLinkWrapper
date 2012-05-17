@@ -2,6 +2,13 @@ SvxLinkWrapper - wrapper for SvxLink
 ====================================
 By Guy Sheffer 4Z7GAI <guysoft at gmail dot com>
 
+Features
+--------
+
+* Autoconnect to stations on startup, and keep-alive option
+* QSO Echolink logger in sqlite3 and a simple web viewer for it
+* Send DTMF preset commands from echolink chat
+
 Requirements
 ------------
 1. python 
