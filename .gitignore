@@ -39,3 +39,11 @@ config.ini
 
 #sound folders
 sounds
+
+#in development and local modules
+src/modules/EcholinkLocalChatModule.py
+src/modules/ExternalControlModule.py
+src/modules/SvxlinkwrapperModule.py
+src/modules/__init__.py
+src/modules/webserver.py
+

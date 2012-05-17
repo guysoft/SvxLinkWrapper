@@ -1,4 +1,16 @@
+SvxLinkWrapper - wrapper for SvxLink
+====================================
+By Guy Sheffer 4Z7GAI <guysoft at gmail dot com>
+
 Requirements
 ------------
 1. python 
 2. python modules: importlib
+3. Svxlink ready to exacute and configured
+
+How to configure and run
+------------------------
+1. copy config.ini.example to config.ini
+2. Set the variables according to your need, you are likely to change the path to modules.EcholinkLoggerModule
+	If you want your database log
+3. Run python SvxLinkWrapper.py
