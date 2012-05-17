@@ -5,12 +5,17 @@ By Guy Sheffer 4Z7GAI <guysoft at gmail dot com>
 Requirements
 ------------
 1. python 
-2. python modules: importlib
+2. python modules: importlib python-sqlite3
 3. Svxlink ready to exacute and configured
 
 How to configure and run
 ------------------------
 1. copy config.ini.example to config.ini
-2. Set the variables according to your need, you are likely to change the path to modules.EcholinkLoggerModule
-	If you want your database log
-3. Run python SvxLinkWrapper.py
+2. Set the variables according to your need in main
+
+
+How to configure QSO logger module
+-----------------------------------
+1. set DATABASE_PATH in modules.EcholinkLoggerModule to the location of EcholinkQsoLog.sqlite
+2. Make sure the folder that EcholinkQsoLog.sqlite has read/write permissions, as well as the file
+3. If you want to view latest qsos from a browser you can move www/EcholinkQsoLog.php to a location on your webserver, and point the variable $db to the path of 
