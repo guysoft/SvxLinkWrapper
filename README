@@ -13,7 +13,7 @@ Requirements
 ------------
 1. python 
 2. python modules: importlib python-sqlite3
-3. Svxlink ready to exacute and configured
+3. Svxlink ready to run and configured (https://sourceforge.net/apps/trac/svxlink/)
 
 How to configure and run
 ------------------------
