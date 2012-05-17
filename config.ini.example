@@ -1,0 +1,23 @@
+[main]
+#Command path to start svxlink
+SVXLINK_CMD=/usr/bin/svxlink
+#The folder where the modules are
+MODULES_DIR=modules
+#This is a command that should play a sound on your radio. You should change it to something that works for you
+PLAY_SOUND_COMMAND=play_sound
+#path to tones wave files
+TONES_PATH=tones
+#The modules to be loaded
+pluginLoadList=["EcholinkAutoConnectModule","EcholinkLoggerModule"]
+
+[modules.EcholinkAutoConnectModule]
+#Max connection attempts before giving up. 0 means unlimited
+ECHOLINK_OPEN=2#
+#maximum attempts to try and connect before giving up
+MAX_ATTEMPTS=1
+#station list, its a dict with the station name and node id. seprated with commas
+STATIONS={"4Z7GAI-R": "624651"}
+
+[modules.EcholinkLoggerModule]
+#Set this to where your sqlite databse is located
+DATABASE_PATH=/var/ham/EcholinkQsoLog.sqlite

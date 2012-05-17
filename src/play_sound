@@ -1,0 +1,18 @@
+#!/bin/bash
+##
+#The script is used to pay a file on your radio
+#You should modify it to work with your own rig
+# Author: Guy Sheffer <guysoft at gmail dot com>
+# Date Apr 3, 2012
+##
+
+while [[ $(lsof /dev/snd/pcmC1D0p) != "" ]] ; do
+sleep 1;
+done
+
+echo y > /dev/radio
+sleep 1
+echo $@
+mplayer -ao alsa:device=hw=1.0 $@
+sleep 1
+echo n > /dev/radio

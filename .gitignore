@@ -1,0 +1,41 @@
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg
+etc/outlets/pdu1.ini
+etc/servers/server1.ini
+etc/servers/server2.ini
+etc/servers/server3.ini
+etc/servers/server4.ini
+etc/config.ini
+
+#Project stuff
+
+#config files
+config.ini
+
+#sound folders
+sounds
