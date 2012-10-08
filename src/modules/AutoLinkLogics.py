@@ -2,7 +2,7 @@
 ''' SvxLinkWrapper - wrapper for SvxLink
 Module to auto-connect Two logics together
 
-Created on Feb 1, 2012
+Created on Oct 8, 2012
 @author: Guy Sheffer <guysoft at gmail dot com>
 '''
 import SvxlinkwrapperModule
