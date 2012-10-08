@@ -21,3 +21,7 @@ STATIONS={"4Z7GAI-R": "624651"}
 [modules.EcholinkLoggerModule]
 #Set this to where your sqlite databse is located
 DATABASE_PATH=/var/ham/EcholinkQsoLog.sqlite
+
+[modules.AutoLinkLogics]
+CONNECT_COMMAND=941#
+SECOND_LOGIC=RepeaterLogic
