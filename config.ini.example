@@ -7,6 +7,9 @@ MODULES_DIR=modules
 PLAY_SOUND_COMMAND=play_sound
 #path to tones wave files
 TONES_PATH=tones
+
+#path to store audio wave files
+SOUNDS_PATH=sounds
 #The modules to be loaded
 pluginLoadList=["EcholinkAutoConnectModule","EcholinkLoggerModule"]
 
