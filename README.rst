@@ -44,4 +44,4 @@ How to configure QSO logger module
 -----------------------------------
 1. set DATABASE_PATH in modules.EcholinkLoggerModule to the location of EcholinkQsoLog.sqlite
 2. Make sure the folder that EcholinkQsoLog.sqlite has read/write permissions, as well as the file
-3. If you want to view latest qsos from a browser you can move ``www/EcholinkQsoLog.php`` to a location on your webserver (on Ubuntu / Debian the default path is ``/vart/www`` )
+3. If you want to view latest qsos from a browser you can move ``www/EcholinkQsoLog.php`` to a location on your webserver (on Ubuntu / Debian the default path is ``/var/www`` )
