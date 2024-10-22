@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ''' SvxLinkWrapper - wrapper for SvxLink
 This is a template module that all other svxlinkwrapper modules extend
 

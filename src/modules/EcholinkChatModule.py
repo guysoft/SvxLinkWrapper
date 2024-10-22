@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ''' SvxLinkWrapper - wrapper for SvxLink
 Module to handle echolink incoming chat message and parse them
 
 Created on Feb 1, 2012
 @author: Guy Sheffer <guysoft at gmail dot com>
 '''
-import SvxlinkwrapperModule
+from . import SvxlinkwrapperModule
 
 '''
 Module to handle echolink incoming chat message and parse them

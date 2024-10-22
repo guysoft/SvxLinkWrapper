@@ -13,14 +13,14 @@ Requirements
 ------------
 1. python
 2. python modules:     importlib python-sqlite3
-3. Svxlink ready to run and configured (https://sourceforge.net/apps/trac/svxlink/)
+3. Svxlink ready to run and configured (https://github.com/sm0svx/svxlink)
 
 Install all requirements except svxlink on Ubuntu / Debian
 ----------------------------------------------------------
 
 ::
     
-    apt-get install python-sqlite3
+    apt-get install sqlite3
 
 
 
