@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ''' SvxLinkWrapper - wrapper for SvxLink
 Main
 
@@ -14,7 +14,7 @@ import modules.SvxlinkwrapperModule
 from subprocess import PIPE, Popen
 from straight.plugin import load
 
-from ConfigParser import SafeConfigParser
+from configparser import SafeConfigParser
 
 def appendProjectPath(path='.'):
     ''' Appends the project path to a relative path
@@ -81,7 +81,7 @@ class SvxLinkWrapper:
         '''
         Handle messages SVXLink outputs to the screen
         '''
-        print (line[:-1])
+        print(line[:-1])
         
         #iterate over all plugins and run handleStdout 
         for plugin in self.plugins:
@@ -91,12 +91,12 @@ class SvxLinkWrapper:
     def playsound(self,sound):
                 
         command = PLAY_SOUND_COMMAND + " " + SOUNDS_PATH + sound
-        print (command)
+        print(command)
         os.system(command)
         return
     
     def debug(self,message):
-        print ("SVXLinkWrapper:" + message)
+        print("SVXLinkWrapper:" + message)
         return
         
     def dtmfSTR(self,string):

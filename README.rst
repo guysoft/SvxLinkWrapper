@@ -20,7 +20,7 @@ Install all requirements except svxlink on Ubuntu / Debian
 
 ::
     
-    apt-get install python-sqlite3
+    apt-get install sqlite3
 
 
 

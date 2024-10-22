@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ''' SvxLinkWrapper - wrapper for SvxLink
 Module to auto-connect to stations on startup
 
 Created on Feb 1, 2012
 @author: Guy Sheffer <guysoft at gmail dot com>
 '''
-import SvxlinkwrapperModule
+from . import SvxlinkwrapperModule
 import time
 import json
 

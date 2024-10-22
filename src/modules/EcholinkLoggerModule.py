@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ''' SvxLinkWrapper - wrapper for SvxLink
 Module that logs all qsos in a sqlite database
 
@@ -9,7 +9,7 @@ import sqlite3
 import time
 import re
 
-from SvxlinkwrapperModule import SvxlinkwrapperModule
+from .SvxlinkwrapperModule import SvxlinkwrapperModule
 
 QSO_CALLSIGN_SEPERATOR=":"
 class dataControl:
@@ -29,14 +29,14 @@ class dataControl:
             
             ip=""
             name=""
-            if ips.has_key(cs):
+            if cs in ips:
                 ip =ips[cs]
-            if names.has_key(cs):
+            if cs in names:
                 name =names[cs]
             
             # Insert a row of data
             sql = "insert into qso values (?,?,?,?,?,?)"
-            variables = (cs,None,ip,buffer(name),state,str(time.time()))
+            variables = (cs,None,ip,name,state,str(time.time()))
             
             c.execute(sql,variables)    
             # Save (commit) the changes
